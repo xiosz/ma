@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的图片展示页</title>
+    <title>保存微信扫码</title>
+    <style>
+        /* 通过 CSS 控制图片大小 */
+        .my-image {
+            width: 85%;       /* 按屏幕宽度的 80% 显示 */
+            max-width: 1000px; /* 最大宽度限制 */
+            height: auto;     /* 高度自适应，保持比例 */
+            display: block;   /* 让图片居中 */
+            margin: 20px auto; /* 上下边距 20px，左右自动居中 */
+        }
+    </style>
 </head>
 <body>
-    <h1>我的微信二维码！</h1>
-    <!-- 替换下方链接为你的图片URL -->
+    <h1>我的图片展示</h1>
     <img 
         src="https://raw.githubusercontent.com/xiosz/ma/main/ma.jpeg" 
-        alt="备注来意"
-        width="380"  <!-- 可选：控制图片宽度 -->
+        alt="我的图片"
+        class="my-image"  <!-- 应用 CSS 类 -->
     >
 </body>
 </html>
